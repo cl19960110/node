@@ -4,7 +4,7 @@ const router = express.Router()
 
 const {list} = require('../controller')
 
-router.get('/123',list)
+router.get('/api/list',list)
 // router.get('/index',(req,res,next)=>{
 //   const data = req.query
 //   res.send(data)
