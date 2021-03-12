@@ -1,0 +1,10 @@
+[2021-02-24T15:03:34.679] [DEBUG] cheese - {}
+[2021-02-24T15:04:12.827] [DEBUG] cheese - {}
+[2021-02-24T15:04:48.045] [DEBUG] cheese - {}
+[2021-02-24T15:06:05.020] [DEBUG] cheese - {}
+[2021-02-24T15:07:16.575] [DEBUG] cheese - [Object: null prototype] {
+  city: '深圳',
+  age: '18',
+  name: '张三',
+  shazi: '牛马'
+}

@@ -1,0 +1,13 @@
+[2021-02-23T15:05:26.543] [DEBUG] cheese - [Object: null prototype] { id: '2', name: 'tongyi', from: '北京' }
+[2021-02-23T15:11:47.076] [DEBUG] cheese - id%3D2%26name%3Dtongyi%26from%3D%E5%8C%97%E4%BA%AC
+[2021-02-23T15:13:02.080] [DEBUG] cheese - id=2&name=tongyi&from=北京
+[2021-02-23T15:15:24.535] [DEBUG] cheese - id=2&name=tongyi&from=%E5%8C%97%E4%BA%AC
+[2021-02-23T15:16:10.709] [DEBUG] cheese - id/2:name/tongyi:from/%E5%8C%97%E4%BA%AC
+[2021-02-23T15:18:45.413] [DEBUG] cheese - [Object: null prototype] { 'id:2/name:tongyi/from:北京': '' }
+[2021-02-23T15:19:21.203] [DEBUG] cheese - [Object: null prototype] {
+  'id:2': '',
+  'name:tongyi': '',
+  'from:北京': ''
+}
+[2021-02-23T15:20:13.727] [DEBUG] cheese - [Object: null prototype] { id: '2', name: 'tongyi', from: '北京' }
+[2021-02-23T15:24:30.261] [DEBUG] cheese - id=2&name=tongyi&from=北京

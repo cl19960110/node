@@ -1,0 +1,24 @@
+{
+	"name": "test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "node ../script/script1.js && node ../script/script2.js",
+		"start": "node ../script/script.js ",
+		"runtest": "node ../script/test.js ",
+		"build": "echo %npm_package_config_env% "
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-package-cshs": "^1.0.0"
+	},
+	"devDependencies": {
+		"node-package-lechen": "^2.0.0"
+	},
+	"config": {
+		"env": "test6666"
+	}
+}

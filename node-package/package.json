@@ -1,0 +1,17 @@
+{
+	"name": "node-package-lechen",
+	"version": "2.0.0",
+	"description": "封装了个寂寞",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"loadsh"
+	],
+	"author": "lechen",
+	"license": "ISC",
+	"dependencies": {
+		"loadsh": "0.0.4"
+	}
+}
