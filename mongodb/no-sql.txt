@@ -1,0 +1,27 @@
+
+mongod -dbpath D:\data\db   //启动服务
+
+
+数据库操作
+    db  //查询当前数据库
+    show dbs    //查询所有数据库
+    use 数据库名    //创建/切换数据库
+    db.stats()  //查询当前数据库状态
+    db.version()    //查询版本
+    db.getMongo()   //查看当前数据库的链接机器地址
+    db.dropDatabase()   //删除当前数据库
+集合操作（Collection）
+    db.createCollection('集合名')   //创建集合
+    db.getCollection('集合名')    //得到当前指定名称的集合  没啥用
+    db.getCollectionNames() //得到当前db的所有集合
+    db.printCollectionStats()   //显示当前db所有集合的状态    没啥用
+文档操作
+    db.集合名.insert([{name:'m1',release:'2020-12-05'}])
+    db.集合名.save([{name:'m1',release:'2020-12-05'}])  //插入数据
+    db.集合名.update({name:'m1'},{$set:{release:'2020-12-04'}},true,true)
+    db.集合名.update(匹配条件,执行操作,无匹配时新增/不新增,匹配单个/多个)//后两个参数可选，默认为true
+    db.集合名.remove({name:'m1'}) //删除,所有匹配的都会删
+
+    db.集合名.find()    //查询数据
+    db.集合名.distinct()    //查询去重的数据
+    db.集合名.find()    //查询去重的数据
