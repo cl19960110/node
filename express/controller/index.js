@@ -1,7 +1,8 @@
 
 var template = require('art-template');
 const path = require('path')
-const fa = require('fs')
+const fs = require('fs')
+const jwt = require('jsonwebtoken')
 const data = require('../model/list')
 
 
@@ -24,14 +25,22 @@ const list = (req,res,next)=>{
 
   });
 
-fa.writeFileSync(path.join(__dirname , '../public/list.html'),html)
-
-
-
-  console.log(html);
-
+fs.writeFileSync(path.join(__dirname , '../public/list.html'),html)
 
 
   res.send('OKAY')
 }
+
+const token =(req,res,next)=>{
+  const privateKey = fs.readFileSync(path.join(__dirname,'../keys/ras_private_key.pem'))
+  const publicKey = fs.readFileSync(path.join(__dirname,'../keys/rsa_public_key.pem'))
+
+
+  const tk = jwt.sign({username:'admin'},privateKey,{algorithm:'RS256'})
+  const decoded = jwt.verify(tk,publicKey)
+  // const tk = jwt.sign({username:'admin'},'hahaha')
+  // const decoded = jwt.verify(tk,'hahaha')
+  res.send(decoded)
+}
+exports.token = token
 exports.list = list

@@ -2,8 +2,9 @@ const express = require('express')
 
 const router = express.Router()
 
-const {list} = require('../controller')
+const {list,token} = require('../controller')
 
+router.get('/api/token',token)
 router.get('/api/list',list)
 // router.get('/index',(req,res,next)=>{
 //   const data = req.query
